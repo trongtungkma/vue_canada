@@ -5,13 +5,7 @@
 </template>
 <script>
 export default {
-  name: 'App',
-  beforeCreate() {
-    // let script = document.createElement("script");
-    // script.setAttribute("src", "customJs/interactive_canvas.min.js");
-    // document.head.appendChild(script);
-
-  }
+  name: 'App'
 }
 </script>
 <style>

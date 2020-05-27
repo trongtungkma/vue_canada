@@ -24,7 +24,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   devServer: {
     compress: true,
     disableHostCheck: true,
-    public:'5a96840a.ngrok.io',
+    public:'https://8826b6e7.ngrok.io',
     clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [
