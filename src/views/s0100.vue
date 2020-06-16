@@ -1,18 +1,15 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="top-title">
-        <h3></h3>
-        <div>
-          <p></p>
-        </div>
+  <div class="container">
+    <div class="top-title">
+      <h3></h3>
+      <div>
+        <p></p>
       </div>
-      <div class="row row-0100 col-sm-11 data-choice"></div>
     </div>
+    <div class="row row-0100 col-md-11 data-choice"></div>
   </div>
 </template>
 <script>
-
 export default {
   name: "s0100",
   created() {
@@ -27,7 +24,7 @@ export default {
             window.interactiveCanvas.sendTextQuery(str);
             if (str.indexOf("nextscreen")) {
               let n = str.indexOf("nextscreen");
-              let res = str.slice(n+11, n+15);
+              let res = str.slice(n + 11, n + 15);
               nextScreen(res);
             }
           });
@@ -42,7 +39,7 @@ export default {
           let node = document.querySelector(".row-0100");
           node.innerHTML = "";
           buttons.forEach(btn => {
-            node.innerHTML += `<div class="col-sm-4 ">
+            node.innerHTML += `<div class="col-md-4 ">
             <button type="button" data-choice="${btn.type},command(${btn.name}),${btn.actions}" class="button btn-top">
               ${btn.name}
             </button>
